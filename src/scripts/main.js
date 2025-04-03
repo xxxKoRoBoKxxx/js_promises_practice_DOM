@@ -35,7 +35,7 @@ function showNotification(messageText, isError = false) {
   const notification = document.createElement('div');
 
   notification.setAttribute('data-qa', 'notification');
-  notification.className = isError ? ' error' : 'success';
+  notification.className = isError ? 'error' : 'success';
   notification.innerText = messageText;
   document.querySelector('body').append(notification);
 
